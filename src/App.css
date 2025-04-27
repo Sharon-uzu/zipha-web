@@ -36,6 +36,14 @@
 .navbar nav a:hover{
   color: #144161;
 }
+.navbar nav .reg{
+  color: #fff;
+}
+.navbar nav .reg li{
+  background: linear-gradient(90deg, #144161, #040007);
+  padding: 10px 25px;
+  border-radius: 7px;
+}
 .navbar nav .logo{
   width:30%;
   padding:0;
@@ -49,7 +57,7 @@
 }
 .navbar nav ul{
   height: 100%;
-  width: 45%;
+  width: 60%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +66,7 @@
 }
 
 .navbar nav ul li{
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 500;
   cursor: pointer;
   list-style: none;
@@ -76,7 +84,8 @@
 /* HERO SECTION */
 .hero{
   width: 100%;
-  height: 80vh;
+  height: auto;
+  padding: 50px 0;
   background-image: url(Asset/Premium\ Photo\ _\ Telegram\ sign\ 3d\ rendering\ abstract\ look\ dark\ realistic\ iconic\ background\ with\ a\ podium\ stage\ \(1\).jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -291,7 +300,7 @@
   background-color: #fff;
   color: #03103f;
   height: 55px;
-  border-radius: 10px;
+  border-radius: 10px 3px 10px 3px;
   border: none;
   padding: 0 20px;
   font-size: 17.5px;
@@ -299,8 +308,12 @@
   position: relative;
   z-index: 7;
   cursor: pointer;
+  transition: all ease-in-out 1.5s;
 }
-
+.hero section .text button:hover{
+  background-color: #144161;
+  color: #fff;
+}
 .hero section .text .btn2{
   background-color: transparent;
   border: 1px solid #fff;
@@ -352,6 +365,17 @@
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 20px;
+}
+
+.struggles .sc button{
+  width: fit-content;
+  background-color: #fff;
+  padding: 12px 20px;
+  color: #144161;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
 }
 
 .struggles .sc .struggle-list{
@@ -412,7 +436,7 @@
 }
 
 .testimony .tests{
-  width: 65%;
+  width: 75%;
   margin: auto;
   margin-top: 60px;
   
@@ -426,8 +450,9 @@
 
 .testimony .tests .test1 .img{
   width: 38%;
- height: 50vh;
+ height: 35vh;
  border: 6px solid #144161;
+ background-color: #144161;
  border-radius: 14px;
  display: grid;
  place-items: center;
@@ -436,8 +461,9 @@
 
 .testimony .tests .test1 .img img{
   width: 98%;
-  height: 48vh;
+  height: 90%;
   object-fit: cover;
+  border: 2px solid #144161;
   border-radius: 10px;
   margin: auto;
   transform: rotate(10deg);
@@ -500,6 +526,228 @@
   font-size: 18px;
   font-weight: 500;
   color: #fff;
+}
+
+/* usecase */
+.usecase{
+  width: 100%;
+  background: linear-gradient(90deg, #040007, #144161);
+  padding: 60px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.usecase h2{
+  color: #fff;
+  font-size: 38px;
+  position: relative;
+  margin-bottom: 82px;
+}
+.usecase h2::before{
+  position: absolute;
+  /* background-color: #144161; */
+  content: "";
+  /* height: 5px; */
+  width: 60px;
+  border: 5px solid transparent;
+  border-top-color:#fff ;
+  bottom: -15px;
+}
+.usecase .use-cases{
+  width: 85%;
+  margin: auto;
+  border-left: 1px solid #fff;
+  margin-top: 40px;
+}
+
+.usecase .use-cases .use-case1{
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  margin-top:60px;
+}
+
+.usecase .use-cases .use-case1 .first{
+  width: 35%;
+  display: flex;
+  gap: 20px;
+  height: 40px;
+  align-items: center;
+  margin-left: -30px;
+}
+
+.usecase .use-cases .use-case1 .first .circs{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+}
+
+.usecase .use-cases .use-case1 .first .circs .circ{
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  background-color: #144161;
+}
+
+.usecase .use-cases .use-case1 .first h3 {
+  color: #fff;
+  font-size: 40px;
+  text-align: start;
+  width: 85%;
+}
+
+.usecase .use-cases .use-case1 .each{
+  color: #fff;
+  width: 65%;
+}
+
+.usecase .use-cases .use-case1 .each p{
+  color: #9d9ead;
+  font-size: 17px;
+  letter-spacing: .7px;
+  line-height: 30px;
+  text-align: start;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+.usecase .use-cases .use-case1 .each .imgs{
+  display: flex;
+  justify-content: space-between;
+}
+
+.usecase .use-cases .use-case1 .each .imgs img{
+  width: 48%;
+  height: 370px;
+  width: 370px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+
+
+.usecase .cases .case1 .case1-c h5{
+  font-size: 17px;
+  font-weight: 500;
+  color: #144161;
+  text-align: start;
+  width: 90%;
+  margin: auto;
+}
+
+/* faq */
+.faq{
+  padding: 40px 0;
+}
+
+.faq h2{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  font-size: 48px;
+  letter-spacing: .5px;
+  line-height: 45px;
+  margin-bottom: 60px;
+}
+
+.faq .q-a{
+  width: 75%;
+  margin:30px auto;
+  padding: 15px 0;
+  border-bottom: 1px solid #5e5e5e;
+
+}
+
+.faq .q-a div{
+  display: flex;
+  margin-bottom: 13px;
+  justify-content: space-between;
+}
+
+.faq .q-a div h4{
+  font-size: 22px;
+  font-weight: 500;
+}
+.faq .q-a div .q-i{
+  font-size: 22px;
+}
+
+.faq .q-a p{
+  font-size: 17px;
+  color: #5e5e5e;
+  letter-spacing: .6px;
+  line-height: 26px;
+}
+
+
+/* community */
+.community{
+  width: 100%;
+  background: linear-gradient(90deg, #040007, #144161);
+  padding: 50px 0;
+}
+.community .comm{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.community .comm .com-l{
+  width: 45%;
+  color: #fff;
+}
+
+.community .comm .com-l h2{
+  width: 85%;
+  font-size: 56px;
+  letter-spacing: .7px;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+
+.community .comm .com-l p{
+  font-size: 20px;
+  letter-spacing: .7px;
+  line-height: 28px;
+}
+
+.community .comm .com-r{
+  width: 45%;
+}
+
+.community .comm .com-r .one{
+  width: 100%;
+  padding: 25px 0;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #757070;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.community .comm .com-r .one div{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.community .comm .com-r .one .c-i{
+  color: #fff;
+  font-size: 21px;
+}
+
+.community .comm .com-r .one div h4{
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /* SERVICE  */
@@ -675,6 +923,7 @@
   text-align: center;
   margin-top: 85px;
   margin-bottom: 70px;
+  padding: 20px 0;
 }
 
 .pricing h2{
@@ -788,6 +1037,91 @@
   color: #144161;
 }
 
+/* comparison */
+.comparison{
+  width: 100%;
+  background-color: #144161;
+  padding: 25px 0;
+  margin-top: 40px;
+ }
+
+ .comparison .compare{
+  width: 80%;
+  margin: auto;
+ }
+
+ .comparison .compare h2{
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 12px;
+  color: #fff;
+ }
+
+ .comparison .compare .table-cont{
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 25px;
+  border-top: 1px solid hsla(0, 0%, 0%, 0.1);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
+
+ }
+
+ .comparison .compare .table-cont .overflow{
+  width: 100%;
+  margin: auto;
+ }
+
+ .comparison .compare .table-cont .overflow .styl-table{
+  width: 100%;
+  border-collapse: collapse;
+ }
+
+ .comparison .compare .table-cont .overflow .styl-table thead{
+  width: 100%;
+  width: 100%;
+ }
+
+ .comparison .compare .table-cont .overflow .styl-table thead tr{
+  /* display: flex; */
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1)
+
+ }
+ .comparison .compare .table-cont .overflow .styl-table thead tr th{
+  padding: 30px 10px 10px 10px;
+  width: 24%;
+  font-size: 22px;
+  text-align: start;
+  border-left: 1px solid hsla(0, 0%, 0%, 0.1)
+
+ }
+ 
+ 
+ .comparison .compare .table-cont .overflow .styl-table tr td{
+  padding: 10px;
+  width: 24%;
+  text-align: start;
+  border-left: 1px solid hsla(0, 0%, 0%, 0.1)
+
+ }
+
+
+ .comparison .compare .table-cont .overflow .styl-table .hh{
+  margin-top: 3%;
+ }
+
+ .comparison .compare .table-cont .overflow .styl-table tr .title{
+  font-weight: 600;
+  font-size: 17px;
+ }
+
+ .comparison .compare .table-cont .overflow .styl-table thead tr:last-child{
+  padding-bottom: 100px;
+ }
+
+
 
 .demo{
   width: 100%;
@@ -877,6 +1211,10 @@
   margin: 30px 0;
   padding: 40px 0;
   background-color: #144161;
+}
+
+#contact{
+  margin-bottom: 0;
 }
 
 .numbers{
@@ -1144,6 +1482,29 @@ footer .foot1 .icon{
   .demo .demo-c .text button{
     margin-bottom: 30px;
   }
+  .usecase .use-cases .use-case1 .each .imgs img{
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width:1400px){
+  .usecase .use-cases .use-case1 .first h3{
+    font-size: 36px;
+    width: 70%;
+  }
+  .usecase .use-cases .use-case1 .each .imgs img{
+    width: 210px;
+    height: 210px;
+  }
+  .usecase .use-cases .use-case1 .each{
+    width: 53%;
+  }
+  .usecase .use-cases .use-case1 .first{
+    width: 45%;
+  }
+  .testimony .tests{
+    width:80% ;
+  }
 }
 
 @media screen and (max-width:1000px){
@@ -1151,19 +1512,67 @@ footer .foot1 .icon{
 footer .foot1 div{
   width: 38%;
 }
-
+.hero section .text{
+  width: 70%;
 }
-
-@media screen and (max-width:850px){
-  .hero{
-    height: 60vh;
+ .testimony .tests{
+    width:90% ;
   }
-  .hero section .text{
+  .testimony h2{
     width: 60%;
   }
 
-  .hero section .text h2{
+  .pricing .price{
+    flex-wrap: wrap;
+  }
+  .pricing .price .price1{
+    width: 48%;
+    margin-top: 20px;
+  }
+  .faq h2{
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width:900px){
+  .usecase .use-cases .use-case1{
+    flex-direction: column;
+  }
+  .usecase .use-cases .use-case1 .first{
+    width: 100%;
+  }
+  .usecase .use-cases .use-case1 .each{
+    width: 85%;
+    margin: auto;
+  }
+  .usecase .use-cases .use-case1 .each p{
+    margin-top: 30px;
+  }
+  .usecase .use-cases .use-case1 .first h3{
     font-size: 30px;
+  }
+  .comparison .compare{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:850px){
+  
+  .hero section .text{
+    width: 100% !important;
+  }
+  .trace-border{
+    padding: 8px 10px;
+  }
+
+  .hero section .text h2{
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .testimony h2{
+    width: 60%;
+    font-size: 38px;
   }
 
   .hero section .text p{
@@ -1199,8 +1608,96 @@ footer .foot1 div{
   .demo .demo-c .text{
     width: 60%;
   }
+
+  .navbar nav ul{
+    position: absolute;
+    top: 8vh;
+    background-color: #fff;
+    left: -100%;
+    width: 50%;
+    z-index: 100;
+    flex-direction: column;
+    justify-content: start;
+    height: 87vh;
+    gap: 40px;
+    padding-top: 5vh;
+  }
+
+  .navbar nav .active{
+    left: 0;
+  }
+
+  .bars{
+    display: flex;
+  }
+
+  .cover{
+    width: 100%;
+    top: 10vh;
+    position: fixed;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, .9);
+    z-index: 5;
+    
+  }
+  .cover.active{
+    display: none;
+  }
+
+  .struggles .sc h2{
+    width: 80%;
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .struggles .sc p{
+    width: 70%;
+  }
+  .testimony .tests{
+    width:100% ;
+  }
+  .testimony h2{
+    width: 90%;
+  }
+  .testimony p{
+    width: 100%;
+  }
+  .pricing .price .price1{
+    width: 100%;
+  }
+  .faq h2{
+    font-size: 38px;
+  }
+  .faq .q-a{
+    width: 85%;
+  }
+  .community .comm{
+    flex-direction: column;
+  }
+  .community .comm .com-l{
+    width: 100%;
+    margin-bottom: 12px;
+  }
+  .community .comm .com-r{
+    width: 100%;
+  }
+  .community .comm .com-l h2{
+    font-size: 40px;
+  }
+
+
 }
 
+@media screen and (max-width:800px){
+  .comparison .compare .table-cont .overflow{
+      overflow-x: auto;
+ 
+   }
+    .comparison .compare .table-cont .overflow .styl-table{
+      border-collapse: collapse;
+      width: 650px;
+      margin: 0 5px;
+    }
+}
 
 @media screen and (max-width:700px){
   .navbar nav ul{
@@ -1248,49 +1745,34 @@ footer .foot1 div{
   footer .foot1 .f-icons{
     width: 35%;
   }
-
+  .testimony .tests .test1{
+    flex-direction: column;
+  }
+  .testimony .tests .test1 .img{
+    width: 100%;
+    height: 420px;
+    margin-bottom: 50px;
+  }
+.testimony .tests .test1 .img img{
+    width: 100%;
+    height: 400px;
+  }
+  .testimony .tests .t-text{
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width:650px){
-  .navbar nav ul{
-    position: absolute;
-    top: 8vh;
-    background-color: #fff;
-    left: -100%;
-    width: 50%;
-    z-index: 100;
-    flex-direction: column;
-    justify-content: start;
-    height: 87vh;
-    gap: 40px;
-    padding-top: 5vh;
-  }
-
-  .navbar nav .active{
-    left: 0;
-  }
-
-  .bars{
-    display: flex;
-  }
-
-  .cover{
-    width: 100%;
-    top: 10vh;
-    position: fixed;
-    height: 100vh;
-    background-color: hsla(0, 0%, 0%, .9);
-    z-index: 5;
-    
-  }
-  .cover.active{
-    display: none;
-  }
+  
   .pricing .price{
     flex-wrap: wrap;
   }
   .pricing .price .price1{
     width: 100%;
+  }
+  .numbers .contact-c .first h6{
+    font-size: 32px;
   }
 }
 
@@ -1319,11 +1801,57 @@ footer .foot1 div{
     font-size: 24px;
   }
 }
+@media screen and (max-width:550px){
+  .struggles .sc .struggle-list .lists{
+    width: 100%;
+  }
+  .benefits .serv-r .serv1{
+    width: 100%;
+  }
+  .contact-us .contact-c{
+    flex-direction: column;
+  }
+  .contact-us .contact-c .first{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .struggles .sc h2{
+    width: 100%;
+    font-size: 32px;
+  }
+  .struggles .sc p{
+    width: 100%;
+  }
+  .struggles .sc .struggle-list h3{
+    font-size: 24px;
+  }
+  .service h1{
+    font-size:32px ;
+  }
+  .usecase .use-cases .use-case1 .first h3{
+    font-size: 25px;
+  }
+  .community .comm .com-l h2{
+    font-size: 34px;
+  }
+  .contact-us h1{
+    font-size: 32px;
+  }
+  .comparison .compare h2{
+    font-size: 30px;
+  }
+
+}
+
 
 @media screen and (max-width:500px){
   .flex1 .text h3{
     font-size: 24px;
     width: 100%;
+  }
+  .testimony .tests .test1 .img{
+    width: 85%;
+    margin: auto;
   }
   .flex1 .text p{
     font-size: 15.5px;
@@ -1341,11 +1869,15 @@ footer .foot1 div{
     width: 60%;
     margin-bottom: 15px;
   }
+  .usecase .use-cases .use-case1 .each .imgs img{
+    width: 150px;
+    height: 150px;
+  }
 }
 
 @media screen and (max-width:400px){
   .hero section .text h2{
-    font-size: 22px;
+    font-size: 29px;
   }
   .hero section .text p{
     font-size: 15px;
@@ -1356,9 +1888,15 @@ footer .foot1 div{
   .service .serv-r .serv1 .text h3{
     font-size: 17px;
   }
+  .numbers .contact-c .first h6{
+    font-size: 26px;
+  }
 
   
-
+  .usecase .use-cases .use-case1 .each .imgs img{
+    width: 120px;
+    height: 120px;
+  }
 
   footer .foot1 div{
     width: 90%;
@@ -1368,6 +1906,12 @@ footer .foot1 div{
   }
   footer .foot1 div p{
     font-size: 14px;
+  }
+  .trace-border{
+    font-size: 13px;
+  }
+  .testimony h2{
+    font-size: 32px;
   }
 
 }
@@ -1380,5 +1924,22 @@ footer .foot1 div{
   footer .foot1 .f-icons{
     width: 80%;
   }
-  
+  .usecase .use-cases .use-case1 .each .imgs{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .usecase .use-cases .use-case1 .first h3{
+    font-size: 24px;
+    width: 90%;
+  }
+  .usecase .use-cases .use-case1 .first .circs{
+    width: 25px;
+    height: 25px;
+  }
+  .usecase .use-cases .use-case1 .first{
+    margin-left: -4%;
+  }
+  .hero section .h-btns{
+    flex-direction: column-reverse;
+  }
 }

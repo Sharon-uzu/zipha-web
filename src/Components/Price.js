@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import Modal from "react-modal";
+import Compare from './Compare';
 
 
 const Price = () => {
@@ -120,6 +121,8 @@ const Price = () => {
 
 
         </div>
+
+        <Compare/>
     </div>
   )
 }

@@ -52,10 +52,12 @@ const Header = () => {
 
         <ul className={click ? 'active' : 'menu'}>
 
-          <a href='#about' onClick={closeMenuBar}><li onClick={closeMenuBar}>About</li></a>
-          <a href='#service' onClick={closeMenuBar}><li>Service</li></a>
+          <a href='#' onClick={closeMenuBar}><li onClick={closeMenuBar}>Home</li></a>
           <a href='#price' onClick={closeMenuBar}><li>Pricing</li></a>
+          <a href='#faq' onClick={closeMenuBar}><li>FAQs</li></a>
           <a href='#contact' onClick={closeMenuBar}><li>Contact Us</li></a>
+          <a className='reg' href='#register' onClick={closeMenuBar}><li>Register</li></a>
+
 
         </ul>
 

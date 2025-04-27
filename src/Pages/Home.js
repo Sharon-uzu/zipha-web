@@ -14,6 +14,10 @@ import Struggles from '../Components/Struggles'
 import Reclaim from '../Components/Reclaim'
 import Numbers from '../Components/Numbers'
 import Testimonial from '../Components/Testimonial'
+import GetStarted from '../Components/GetStarted'
+import UseCase from '../Components/UseCase'
+import Faq from '../Components/Faq'
+import Community from '../Components/Community'
 
 
 const Home = () => {
@@ -27,13 +31,17 @@ const Home = () => {
       <Choose/>
       <Numbers/>
       <Testimonial/>
-      <Service/>
-      <Flex1/>
-      <Expert/>
-      <Demo/>
+      <UseCase/>
       <Price/>
+      <GetStarted/>
+      <Faq/>
+      <Community/>
       <Contact/>
-      <Footer/>
+      {/* <Service/> */}
+      {/* <Flex1/> */}
+      {/* <Expert/> */}
+      {/* <Demo/> */}
+      {/* <Footer/> */}
     </div>
   )
 }
